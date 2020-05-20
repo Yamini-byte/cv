@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>COMPILER DESIGN</title>
+</head>
+
+<body>
+  <p>Optimization of the code is often performed at the end of the development stage since it reduces
+    readability and adds code that is used to increase the performance.</p>
+  <p>There are many important questions that can be formed from the lesser known part of
+    the subject like code optimizations and symbol table. Listing down soe of the basic and
+    important questions from them-</p><br>
+  <hr size="3">
+  <ol>
+    <li>What is the outcome of the intermediate code generator phase of the compiler.
+      In what ways can the code be represented?</li>
+    <li>Code optimization is a part of which phase of the compiler-- analysis or syntheis?</li>
+    <li>what are the objectives of the compiler optimization process?</li>
+    <li>breifly elaborate the types of code optimizations.</li>
+    <li>What are the different tyoes of three address codes.</li>
+    <li>How can the three address code be represented?</li>
+    <li>What is Back Patching?</li>
+  </ol>
+  <p>Answers to the above questions can be given as </p>
+  <ol>
+    <li>the outcome of the intermediate code generator is mostly the three address code.
+      The other way the optimized code can be represented is are broadly
+      <ol>
+        <li>Linear form
+          <ul>
+            <li>postfix expressions</li>
+            <li>three address code</li>
+          </ul>
+        </li>
+        <li>tree form
+          <ul>
+            <li>syntax tree</li>
+            <li>directed acyclic Graph</li>
+          </ul>
+        </li>
+      </ol>
+    </li><br>
+
+    <li>The code optimization is the part of syntheis phase of the comiler,which is a
+      program transformation technique, which tries to mprove the intermediate code making it consume
+      fewer resources(i.r., CPU, Memory) so that faster running machine code will result.
+    </li><br>
+
+    <li>The code optimization process should meet the following objectives-
+      <ul>
+        <li>The optimization must be correct, it must not in any way change the meaning of the program.</li>
+        <li>Optimization should increase the speed and performance of the program</li>
+        <li>The compilation time must be kept reasonable</li>
+        <li>the optimization must no delay the overall compilation process.</li>
+      </ul>
+    </li><br>
+    <li>The types of code optimizations can be broadly classified into two types-
+      <ul>
+        <li>Machine Independed Optimization-Does not involve any CPU registers ot absolute
+          memory Locations.</li>
+        <li>Machine Dependent Code optimization-done after the target code has been generated and when
+          code is transformed according to the target machine architecture.</li>
+      </ul>
+    </li><br>
+    <li>
+      <ol>
+        <li>x = y op z</li>
+        <li>x = op z</li>
+        <li>x = y</li>
+        <li>Conditional goto- if g goto L</li>
+        <li>Unconditional goto- goto L</li>
+        <li>A[i] = x and y = A[i]</li>
+        <li>x = *p and y = &p</li>
+      </ol>
+    </li><br>
+    <li>
+      <ol>
+        <li>Quadruples</li>
+        <li>Triples</li>
+        <li>Indirect triples</li>
+      </ol>
+    </li><br>
+    <li>Backpatching is the activity of filling up unspecified information of labels using appropriate
+      semantic actions during the process of code generation. Backpatching is the activity of filling
+      up unspecified information of labels using appropriate semantic actions during the process of code
+      generation.
+    </li><br>
+  </ol>
+  <hr size="3">
+</body>
+
+</html>
